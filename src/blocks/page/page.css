@@ -17,7 +17,7 @@
   --team-background: #f3f3f3;
   --font-color: #2b292a;
   --font-link: rgba(43, 41, 42, .4);
-
+  position: relative;
   color: var(--font-color);
 }
 

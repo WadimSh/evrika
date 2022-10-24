@@ -1,3 +1,5 @@
+@import url(../page/popup/popup.css);
+
 .header {
   background-color: var(--header-background);
   padding: 26px calc(50px + (128 - 50) * ((100vw - 320px) / (2560 - 320)));
@@ -65,7 +67,7 @@
   color: var(--font-link);
 }
 
-.mobail-nav {
+.header__hamburder-lines {
   display: none;
 }
 
@@ -74,19 +76,8 @@
     display: none;
   }
 
-  .mobail-nav {
+  .header__hamburder-lines {
     display: block;
-    position: relative;
-  }
-
-  .checkbox {
-    height: 21px;
-    width: 21px;
-    opacity: 0;
-    z-index: 5;
-  }
-
-  .hamburder-lines {
     height: 22px;
     width: 28px;
     cursor: pointer;
@@ -94,13 +85,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
   }
 
-  .line {
+  .header__line {
     display: block;
     height: 3px;
     width: 100%;
@@ -108,29 +95,29 @@
     background: var(--font-color);
   }
 
-  .line1 {
+  .line-one {
     transform-origin: 0% 0%;
     transition: transform .4s ease-in-out;
   }
 
-  .line2 {
+  .line-two {
     transition: transform .2s ease-in-out;
   }
 
-  .line3 {
+  .line-three {
     transform-origin: 0% 100%;
     transition: transform .4s ease-in-out;
   }
 
-  #toggle:checked + .hamburder-lines .line1 {
+  .line-one-rotate {
     transform: rotate(45deg);
   }
 
-  #toggle:checked + .hamburder-lines .line2 {
+  .line-two-rotate {
     transform: scaleY(0);
   }
 
-  #toggle:checked + .hamburder-lines .line3 {
+  .line-three-rotate {
     transform: rotate(-45deg);
   }
 }
