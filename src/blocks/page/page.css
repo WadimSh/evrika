@@ -15,4 +15,13 @@
   --advantage-background: #e5e9ec;
   --reviews-contacts-background: #e8e8e8;
   --team-background: #f3f3f3;
+  --font-color: #2b292a;
+  --font-link: rgba(43, 41, 42, .4);
+
+  color: var(--font-color);
+}
+
+.anchor {
+  position: relative;
+  top: -90px;
 }

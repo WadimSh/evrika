@@ -8,17 +8,32 @@
 </head>
 <body class="page">
   <header class="header">
-
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <img class="header__logo-img" src="<%=require('./images/logo.svg')%>" alt="Логотип компании">
+        Эврика
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#about">О центре</a></li>
+          <li class="header__item"><a class="header__link" href="#services">Лечение</a></li>
+          <li class="header__item"><a class="header__link" href="#reviews">Отзывы</a></li>
+          <li class="header__item"><a class="header__link" href="#team">Сотрудники</a></li>
+          <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header__tel" href="tel: +790090000508">+7 900 9000 05 08</a>
+    </div>
   </header>
   <main class="main">
     <section class="cover">
 
     </section>
     <section class="about">
-
+      <div class="anchor" id="about"></div>
     </section>
     <section class="services">
-
+      <div class="anchor" id="services"></div>
     </section>
     <section class="advantage">
 
@@ -27,13 +42,13 @@
 
     </section>
     <section class="reviews">
-
+      <div class="anchor" id="reviews"></div>
     </section>
     <section class="team">
-
+      <div class="anchor" id="team"></div>
     </section>
     <section class="contacts">
-      
+      <div class="anchor" id="contacts"></div>
     </section>
   </main>
   <footer class="footer">
