@@ -7,6 +7,7 @@
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+  min-height: 100vh;
   width: 100%;
   --header-background: #d9d9d9;
   --footer-background: #332e30;
@@ -16,9 +17,12 @@
   --reviews-contacts-background: #e8e8e8;
   --team-background: #f3f3f3;
   --font-color: #2b292a;
+  --font-footer-color: #fff;
+  --font-footer-link: rgba(255, 255, 255, .32);
   --font-link: rgba(43, 41, 42, .4);
-  position: relative;
   color: var(--font-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .anchor {
