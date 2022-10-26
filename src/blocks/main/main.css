@@ -2,6 +2,7 @@
 @import url(./cover/cover.css);
 @import url(./about/about.css);
 @import url(./services/services.css);
+@import url(./advantage/advantage.css);
 
 .main {
   flex: auto;
