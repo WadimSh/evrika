@@ -104,3 +104,62 @@
 .services__link:hover {
   animation: wiggle cubic-bezier(.36, .07, .19, .97) 1000ms forwards;
 }
+
+@media screen and (max-width: 1200px) {
+  .services__block-title {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .services__img {
+    padding-left: 35px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .services__content {
+    grid-template-areas: 
+      "title link"
+      "img img";
+  }
+
+  .services__title {
+    align-self: center;
+  }
+
+  .services__img {
+    justify-self: center;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .services__wrapper {
+    grid-template-areas: 
+      "subtitle-one" 
+      "content-one"
+      "content-two";
+  }
+
+  .subtitle-two {
+    display: none;
+  }
+
+  .services__content {
+    grid-template-areas: 
+      "img"
+      "title"
+      "link";
+    padding-left: 0;
+    justify-self: center;
+  }
+
+  .services__title {
+    padding: 20px 0 10px 0;
+  }
+
+  .services__link {
+    justify-self: center;
+  }
+}

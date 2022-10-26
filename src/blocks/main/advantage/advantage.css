@@ -22,8 +22,8 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   max-width: 1180px;
   margin-bottom: 115px;
@@ -69,7 +69,15 @@
   color: rgba(43, 41, 42, .8);
 }
 
+@media screen and (max-width: 1200px) {
+  .advantage__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 800px) {
+  
+
   .advantage__title {
     margin: 0 0 60px 0;
     text-align: center;
@@ -85,5 +93,11 @@
 
   .advantage__ellipse {
     display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .advantage__list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
