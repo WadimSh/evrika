@@ -18,6 +18,7 @@ const createIntersectionObserver = (elem, callback, options) => {
 
 const outNum = (entries) => {
   let [entry] = entries;
+  entry.target.innerHTML = 0;
   let step = Number(entry.target.getAttribute('data-step'));
   let num = Number(entry.target.getAttribute('data-numerel'));
   let logo = entry.target.getAttribute('data-logik');
@@ -37,7 +38,7 @@ const outNum = (entries) => {
 };
 
 let options = {
-  rootMargin: '0px 0px 0% 0px'
+  rootMargin: '0px'
 };
 
 createIntersectionObserver(one, outNum, options);

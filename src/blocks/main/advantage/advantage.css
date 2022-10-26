@@ -38,6 +38,11 @@
   grid-template-areas: 
     "title title ellipse"
     "description description description";
+  transition: .3s;
+}
+
+.advantage__item:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, .05);
 }
 
 .advantage__item-title {

@@ -52,9 +52,9 @@
 .services__content {
   display: grid;
   grid-template-areas: 
-    "title img"
-    "link img";
-  grid-template-columns: 300px 1fr;
+    "title title img"
+    "link remark img";
+  grid-template-columns: 300px 16px 1fr;
   padding-top: 80px;
   padding-left: 17px;
   margin-bottom: 110px;
@@ -105,6 +105,31 @@
   animation: wiggle cubic-bezier(.36, .07, .19, .97) 1000ms forwards;
 }
 
+.services__remark {
+  grid-area: remark;
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--font-color);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: .3s;
+}
+
+.services__remark:hover::after {
+  content: attr(data-tooltip);
+  text-align: left;
+  position: absolute;
+  top: -.4em;
+  left: 2em;
+  width: 320px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 28px;
+  color: #000;
+}
+
 @media screen and (max-width: 1200px) {
   .services__block-title {
     justify-content: center;
@@ -119,8 +144,9 @@
 @media screen and (max-width: 900px) {
   .services__content {
     grid-template-areas: 
-      "title link"
-      "img img";
+      "title title link"
+      "remark img img";
+    grid-template-columns:  16px 300px 1fr;
   }
 
   .services__title {
@@ -131,6 +157,11 @@
     justify-self: center;
     padding-left: 0;
     padding-top: 30px;
+  }
+
+  .services__remark {
+    align-self: flex-end;
+    margin-bottom: 60px;
   }
 }
 
@@ -149,8 +180,10 @@
   .services__content {
     grid-template-areas: 
       "img"
+      "remark"
       "title"
       "link";
+    grid-template-columns: 1fr;
     padding-left: 0;
     justify-self: center;
   }
@@ -161,5 +194,20 @@
 
   .services__link {
     justify-self: center;
+  }
+
+  .services__img {
+    padding-top: 0;
+  }
+
+  .services__remark {
+    margin-bottom: 0;
+  }
+
+  .services__remark:hover::after {
+    top: -6.5em;
+    left: .5em;
+    width: 300px;
+    color: #fff;
   }
 }
