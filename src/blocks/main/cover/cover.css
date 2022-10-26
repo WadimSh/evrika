@@ -72,7 +72,7 @@
 }
 
 .cover__link:hover {
-  animation: wiggle 1s linear;
+  animation: wiggle cubic-bezier(.36, .07, .19, .97) 1000ms forwards;
 }
 
 @media screen and (max-width: 1000px) {

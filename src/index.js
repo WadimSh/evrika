@@ -33,10 +33,11 @@ const outNum = (entries) => {
       entry.target.innerHTML = n;
     }
   }, 50);
+  
 };
 
 let options = {
-  rootMargin: '50px'
+  rootMargin: '0px 0px 0% 0px'
 };
 
 createIntersectionObserver(one, outNum, options);
