@@ -6,6 +6,42 @@ const lineOne = document.querySelector('.line-one');
 const lineTwo = document.querySelector('.line-two');
 const lineThree = document.querySelector('.line-three');
 const item = document.querySelector('.popup__list');
+const one = document.querySelector('.one');
+const two = document.querySelector('.two');
+const three = document.querySelector('.three');
+
+const createIntersectionObserver = (elem, callback, options) => {
+  let observer = new IntersectionObserver(callback, options || {});
+  observer.observe(elem);
+  return observer;
+}
+
+const outNum = (entries) => {
+  let [entry] = entries;
+  let step = Number(entry.target.getAttribute('data-step'));
+  let num = Number(entry.target.getAttribute('data-numerel'));
+  let logo = entry.target.getAttribute('data-logik');
+  let n = 0;
+  let interval = setInterval(() => {
+    n = n + step;
+    if(n == num) {
+      clearInterval(interval);
+    }
+    if(logo == 'true') {
+      entry.target.innerHTML = n + ' +';
+    } else {
+      entry.target.innerHTML = n;
+    }
+  }, 50);
+};
+
+let options = {
+  rootMargin: '50px'
+};
+
+createIntersectionObserver(one, outNum, options);
+createIntersectionObserver(two, outNum, options);
+createIntersectionObserver(three, outNum, options);
 
 botton.addEventListener('click', () => {
   lineOne.classList.toggle('line-one-rotate');
