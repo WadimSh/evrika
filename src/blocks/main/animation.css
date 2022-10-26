@@ -1,0 +1,37 @@
+@keyframes shake {
+  0% {
+    transform: scale(.9,1.1) translateY(-5px);
+    transition: transform 1s;
+  }
+  25% {
+    transform: scale(1.1,.9) translateY(10px);
+  }
+  50% {
+    transform: scale(.9,1.1) translateY(-4px);
+    transition: transform .7s;
+  }
+  75% {
+    transform: scale(1.05,.95) translateY(10px);
+  }
+  100% {
+    transform: scale(1,1) translateY(-2px);
+    transition: transform .3s;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0);
+    transition: transform .01s;
+  }
+  25% {
+    transform: scale(1.1) rotate(18deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+    transition: transform .03s;
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

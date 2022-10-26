@@ -1,5 +1,7 @@
+@import url(./animation.css);
 @import url(./cover/cover.css);
 @import url(./about/about.css);
+@import url(./services/services.css);
 
 .main {
   flex: auto;
