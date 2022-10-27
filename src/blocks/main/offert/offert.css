@@ -78,6 +78,11 @@
   opacity: .8;
 }
 
+.offert__input:invalid {
+  color: #FF3055;
+  border-bottom: 1px solid #FF3055;
+}
+
 .offert__input:hover,
 .offert__input:focus,
 .offert__input:active {

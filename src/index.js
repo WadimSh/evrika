@@ -9,6 +9,8 @@ const item = document.querySelector('.popup__list');
 const one = document.querySelector('.one');
 const two = document.querySelector('.two');
 const three = document.querySelector('.three');
+const inputs = document.querySelectorAll('.offert__input');
+const form = document.querySelector('.offert__form');
 
 const createIntersectionObserver = (elem, callback, options) => {
   let observer = new IntersectionObserver(callback, options || {});
@@ -44,6 +46,14 @@ let options = {
 createIntersectionObserver(one, outNum, options);
 createIntersectionObserver(two, outNum, options);
 createIntersectionObserver(three, outNum, options);
+
+form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  inputs.forEach((input) => {
+    console.log(input.value);
+    input.value = "";
+  });
+});
 
 botton.addEventListener('click', () => {
   lineOne.classList.toggle('line-one-rotate');
