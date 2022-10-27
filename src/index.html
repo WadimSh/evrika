@@ -144,12 +144,12 @@
       <div class="offert__wrapper">
         <span class="offert__caption">БЕСПЛАТНО</span>
         <h2 class="offert__title">ЗАПИШИТЕСЬ НА ФУНКЦИОНАЛЬНУЮ ДИАГНОСТИКУ</h2>
-        <form action="" class="offert__form">
-          <input type="text" class="offert__input" placeholder="Имя">
-          <input type="email" class="offert__input" placeholder="Email">
-          <button class="offert__submit">НАЧАТЬ ЛЕЧЕНИЕ</button>
+        <form name="form" class="offert__form">
+          <input type="text" class="offert__input input-one" placeholder="Имя" autocomplete="off" minlength="2" maxlength="30" required>
+          <input type="email" class="offert__input input-two" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="off" required>
+          <button class="offert__submit submit">НАЧАТЬ ЛЕЧЕНИЕ</button>
         </form>
-        <span class="offert__note">Нажимая на кнопку, вы соглашаетесь с политикой в отношении обработки персональных данных.*</span>
+        <p class="offert__note">Нажимая на кнопку, вы соглашаетесь с политикой в отношении обработки персональных данных.*</p>
       </div>
     </section>
     <section class="reviews">

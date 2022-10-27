@@ -1,7 +1,6 @@
 .cover {
   width: 100%;
-  height: 60vh;
-  min-height: 690px;
+  min-height: 764px;
   background-image: linear-gradient(rgba(1, 14, 19, 0.6), rgba(1, 14, 19, 0.6)), url(../../../images/cover.jpg);
   background-position: center center;
   background-repeat: no-repeat;
