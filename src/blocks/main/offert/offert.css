@@ -7,10 +7,10 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 
 .offert__wrapper {
+  align-self: flex-end;
   margin-bottom: 45px;
   display: flex;
   flex-direction: column;
@@ -80,7 +80,6 @@
 
 .offert__input:invalid {
   color: #FF3055;
-  border-bottom: 1px solid #FF3055;
 }
 
 .offert__input:hover,
