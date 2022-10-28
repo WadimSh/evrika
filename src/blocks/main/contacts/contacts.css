@@ -1,0 +1,60 @@
+.contacts {
+  width: 100%;
+  background-color: var(--reviews-contacts-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__wrapper {
+  margin: 115px 0;
+}
+
+.contacts__title {
+  margin: 0 0 50px 100px;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 100%;
+}
+
+.contacts__list {
+  margin: 0 0 50px;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.cotacts__item {
+  width: 280px;
+  height: 102px;
+  background: rgba(2, 149, 201, .3);
+  opacity: .7;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+  border-radius: 10px;
+  padding: 17px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__item-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 115%;
+  letter-spacing: -.02em;
+}
+
+.contacts__item-subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 115%;
+}
+
+.contacts__map {
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, .25));
+}

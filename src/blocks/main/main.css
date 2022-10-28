@@ -5,6 +5,8 @@
 @import url(./advantage/advantage.css);
 @import url(./offert/offert.css);
 @import url(./reviews/reviews.css);
+@import url(./team/team.css);
+@import url(./contacts/contacts.css);
 
 .main {
   flex: auto;
