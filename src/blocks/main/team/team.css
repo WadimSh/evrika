@@ -123,6 +123,8 @@
 
   .team__title {
     margin: 0 0 50px 0;
+    width: 100%;
+    text-align: center;
   }
 
   .team__wrapper-note {

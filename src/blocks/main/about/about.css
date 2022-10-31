@@ -93,7 +93,7 @@
 .about__subtitle {
   font-weight: 400;
   font-size: 1.1rem;
-  line-height: 20px;
+  line-height: 100%;
   color: var(--font-link);
 }
 

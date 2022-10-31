@@ -2,7 +2,7 @@
 
 .header {
   background-color: var(--header-background);
-  padding: 26px calc(50px + (128 - 50) * ((100vw - 320px) / (2560 - 320)));
+  padding: calc(10px + (26 - 10) * ((100vw - 320px) / (2560 - 320))) calc(50px + (128 - 50) * ((100vw - 320px) / (2560 - 320)));
   display: flex;
   justify-content: center;
 }
